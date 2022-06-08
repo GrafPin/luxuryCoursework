@@ -21,11 +21,11 @@
 }
 
 #valid_email {
-  top: 344px;
+  top: 300px;
 }
 
 #valid_password {
-  top: 475px;
+  top: 408px;
 }
 
 input::placeholder {

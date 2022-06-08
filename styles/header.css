@@ -1,0 +1,151 @@
+@font-face {
+  font-family: MicrosoftSansSerif;
+  src: url(../fonts/MicrosoftSansSerif.ttf);
+}
+
+body {
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 360px;
+  position: relative;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*header*/
+header {
+  width: 100%;
+  padding-top: 30px;
+}
+
+.container {
+  font-family: Calibri;
+  width: 100%;
+  max-width: 1130px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.header_menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_logo {
+  width: 200px;
+  font-family: MicrosoftSansSerif;
+  font-size: 28px;
+  font-weight: bold;
+  color: #1f373d;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.nav a {
+  font-size: 16px;
+  color: #1f373d;
+  margin: 0 10px;
+}
+
+.header_login {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header_login a {
+  font-size: 16px;
+  color: #1f373d;
+}
+
+.registration {
+  margin-right: 15px;
+}
+
+.registration:hover,
+.header_logo:hover,
+.nav a:hover {
+  color: #01ccff;
+}
+
+.input_aсс {
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: #01ccff;
+
+  /*login button animation*/
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #01ccff;
+}
+
+.input_aсс:hover {
+  background-color: transparent;
+}
+
+/*winter*/
+.winter img {
+  width: 25px;
+  height: auto;
+}
+
+.winter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #01ccff;
+  margin-right: 10px;
+  padding: 5px;
+}
+
+#winter_checkbox {
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 930px) {
+  .header_menu {
+    margin-bottom: 30px;
+  }
+
+  .input_aсс {
+    padding: 5px 10px;
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  .header_menu {
+    flex-direction: column;
+  }
+
+  .header_logo {
+    width: 100%;
+    text-align: left;
+  }
+
+  .nav a {
+    font-size: 18px;
+  }
+
+  .nav {
+    margin: 20px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

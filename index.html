@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>РОСКОШЬ - Aгентство Недвижимости</title>
+  <meta name="description" content="coursework" />
+  <meta name="author" content="Dmitry_Milchenko" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles/bootstrap-reboot.css" />
+  <link rel="stylesheet" href="styles/header.css?ver=1" />
+  <link rel="stylesheet" href="styles/main_content.css?ver=1" />
+  <link rel="stylesheet" href="styles/footer.css?ver=1" />
+  <link rel="stylesheet" href="styles/lightrope.css" />
+  <link rel="stylesheet" href="styles/animate.min.css" />
+  <link rel="stylesheet" href="styles/preloader.css" />
+  <link rel="stylesheet" href="styles/registration_form.css" />
+  <link rel="stylesheet" href="styles/login_form.css" />
+  <link rel="shortcut icon" type="image/png" href="images/icons/diamond.png"/>
+</head>
+
+<body>
+
+  <!-- registration -->
+  <div class="wrapper_and_form_registration">
+    <div class="wrapper_form">
+    </div>
+
+    <form action="index.html" class="registration_form" method="post">
+
+      <span class="close_registration_form"></span>
+
+      <h1>Регистрация</h1>
+
+      <div class="form-group">
+        <label id="name-label" for="name">Имя*:</label>
+        <span id="valid_name"></span>
+        <input type="text" name="name" id="name" class="form-control" placeholder="Введите ваше имя"
+          title="Буквы, цифры, дефисы и подчёркивания, от 3 до 16 символов." />
+      </div>
+      <div class="form-group">
+        <label id="login-label" for="login">Логин*:</label>
+        <span id="valid_login"></span>
+        <input type="text" name="login" id="login" class="form-control" placeholder="Введите ваш логин"
+          title="Буквы, цифры, дефисы и подчёркивания, от 3 до 16 символов." />
+      </div>
+      <div class="form-group registration_sex">
+        <p>
+          Пол:
+        </p>
+        <label>
+          <input name="sex" value="Man" type="radio" class="input-radio" checked />Мужской</label>
+        <label>
+          <input name="sex" value="Woman" type="radio" class="input-radio" />Женский
+        </label>
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">Email*:</label>
+        <span id="valid_email"></span>
+        <input type="email" name="email" id="email" class="form-control" placeholder="Введите email@" />
+      </div>
+      <div class="form-group registration_age">
+        <label id="age-label" for="age">Возраст:</label>
+        <span id="valid_age"></span>
+        <input type="number" name="age" id="age" min="10" max="100" class="age-label" />
+      </div>
+      <div class="form-group">
+        <label id="password-label" for="password">Пароль*:</label>
+        <span id="valid_password"></span>
+        <input type="password" name="password" id="password" class="form-control" placeholder="Введите пароль"
+          title="Буквы, цифры, дефисы и подчёркивания, от 6 до 18 символов." />
+      </div>
+      <div class="form-group">
+        <label id="phone-label" for="phone">
+          <span id="valid_phone"></span>
+          Телефон в формате 8 025 xxx xx xx:
+        </label>
+        <input type="tel" name="phone" id="phone" class="phone-label" title="Введите номер в указанном формате."
+          pattern="(8 0(25|29|33|34) ([0-9]{3}( [0-9]{2}){2}))" placeholder="8 025 111 22 33" />
+      </div>
+      <div class="form-group check">
+        <p>
+          Как вы узнали о нас?
+        </p>
+        <label>
+          <input name="info" value="Friends" type="checkbox" class="input-checkbox" />
+          От друзей
+        </label>
+        <label>
+          <input name="info" value="Social networks" type="checkbox" class="input-checkbox" />Социальные сети
+        </label>
+        <label>
+          <input name="info" value="Advertising" type="checkbox" class="input-checkbox" />Реклама в интернете
+        </label>
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Отправить" class="submit-button" />
+        <input type="reset" value="Очистить" class="reset-button" />
+      </div>
+
+
+    </form>
+
+  </div>
+
+  <!-- input -->
+  <div class="wrapper_and_form_login">
+    <div class="wrapper_form">
+    </div>
+
+    <form action="index.html" class="login_form" method="post">
+
+      <span class="close_login_form"></span>
+
+      <h1>Вход</h1>
+
+      <div class="txtb">
+        <input type="text" id="login_login" name="login">
+        <span data-placeholder="Имя пользователя"></span>
+      </div>
+
+      <div class="txtb">
+        <input type="password" id="password_login" name="password">
+        <span data-placeholder="Пароль"></span>
+      </div>
+
+      <input type="submit" class="logbtn" value="Войти">
+
+      <div class="bottom_text">
+        Нет учетной записи? <a href="#">Регистрация</a>
+      </div>
+
+    </form>
+
+  </div>
+
+  <!-- preloader -->
+  <div class="preloader">
+    <div class="preloader_image"></div>
+  </div>
+
+  <!-- header -->
+  <header>
+    
+    <!-- garlands -->
+    <ul class="lightrope">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+
+    <div class="container header_menu">
+      <div class="header_logo">
+        <a href="index.html">РОСКОШЬ</a>
+      </div>
+      <nav class="nav">
+        <a href="#s2">О нас</a>
+        <a href="#s3">Квартиры</a>
+        <a href="#s4">Как это работает</a>
+        <a href="#s6">Агенты</a>
+        <a href="#s1">Контакты</a>
+      </nav>
+      <div class="header_login">
+        <div class="winter">
+          <input id="winter_checkbox" onclick="save()" type="checkbox">
+          <img class="flake" src="images/flake.png" alt="flake">
+        </div>
+        <a href="#" class="input_aсс">Войти в аккаунт</a>
+      </div>
+    </div>
+
+  </header>
+
+  <!-- main -->
+  <main>
+
+
+    <div class="container section_banner">
+      <iframe class="banner" src="banner/banner.html" frameborder="0"></iframe>
+    </div>
+
+    <!-- 1 -->
+    <section id="s1" class="container new_flat">
+      <div class="first">
+        <h1 class="first_title wow fadeInDown">Найдите свою новую современную квартиру</h1>
+        <form action="#" class="search first_search wow bounceInLeft" data-wow-delay="0.6s" method="post">
+          <input class="search_input" name="name" placeholder="Поиск адреса">
+          <button class="search_btn" type="submit">Поиск</button>
+        </form>
+        <img class="first_bg" src="images/header.jpg" alt="bg_flat">
+        <div class="first_adress wow bounceInRight" data-wow-delay="0.6s">
+          <a href="tel:+375291234456" class="first_adress_phone">
+            <img class="img_phone" src="images/icons/phone.svg" alt="phone">
+            <span class="btn_blue">+375(29) 12-34-456</span>
+          </a>
+          <a href="https://goo.gl/maps/FXE2sBbAWts2qaTEA"  target="_blank" class="first_adress_location">
+            <img class="img_location" src="images/icons/location.svg" alt="location">
+            <span class="btn_blue">Минск, Беларусь</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- 2 -->
+    <section id="s2" class="section_stats">
+      <div class="container">
+        <h2 class="section_title stats_title">Статистика нашей компании</h2>
+        <div class="stats">
+          <div class="stats_desc">
+            <div>
+              <p>Со дня основания агентство «Роскошь» характеризует динамичное развитие. Прозрачность отношений с
+                клиентами,
+                включая индивидуальный подход и честное ценообразование – основа доверия клиентов и партнеров.</p>
+              <p> Активное сотрудничество с крупными банками и строительными компаниями позволяет агентству учитывать
+                и продвигать интересы своих клиентов, выбирать оптимальные пути решения задач,
+                обеспечивать юридическую защиту и сопровождение сделок. </p>
+              <p>Постоянная работа по расширению видов услуг, опыт и применение новых технологий делают компанию
+                открытым, успешным и уверенным игроком рынка недвижимости.</p>
+              <p> Оперативное решение задач любой сложности возможно благодаря тесному взаимодействию всех сотрудников
+                агентства.</p>
+            </div>
+          </div>
+          <div class="stats_numbers">
+            <div class="stats_numbers_item">
+              <div class="stats_numbers_inner">
+                <span class="stats_numbers_num">748</span>
+                <div class="stats_numbers_text">Квартир</div>
+              </div>
+            </div>
+            <div class="stats_numbers_item">
+              <div class="stats_numbers_inner">
+                <span class="stats_numbers_num">3854</span>
+                <div class="stats_numbers_text">Клиентов</div>
+              </div>
+            </div>
+            <div class="stats_numbers_item">
+              <div class="stats_numbers_inner">
+                <span class="stats_numbers_num">24</span>
+                <div class="stats_numbers_text">Содрудника</div>
+              </div>
+            </div>
+            <div class="stats_numbers_item">
+              <div class="stats_numbers_inner">
+                <span class="stats_numbers_num">14</span>
+                <div class="stats_numbers_text">Наград</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3 -->
+    <section id="s3" class="section section_apartment">
+      <div class="container">
+        <h2 class="section_title apartment_title">Более 500+ квартир в аренду</h2>
+        <div class="apartments">
+
+          <div class="apartments_inner wow fadeInRight" data-wow-offset="130">
+            <a href="images/apartments/1.jpg" class="lightzoom">
+              <img class="apartments_photo" src="images/apartments/1.jpg" alt="apartments">
+            </a>
+            <div class="apartments_name">Случайная квартира, г. Минск</div>
+            <div class="apartments_info">
+              <div class="apartments_price">$300</div>
+              <div class="apartments_data">
+                <div class="info_bath"><img class="bath_img" src="images/icons/shower.svg" alt="shower">1 ВК</div>
+                <div class="info"><img class="bed_img" src="images/icons/bed.svg" alt="shower">1 СК</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="apartments_inner wow fadeInRight" data-wow-offset="130" data-wow-delay="0.2s">
+            <a href="images/apartments/2.jpg" class="lightzoom">
+              <img class="apartments_photo" src="images/apartments/2.jpg" alt="apartments">
+            </a>
+            <div class="apartments_name">Случайная квартира, г. Минск</div>
+            <div class="apartments_info">
+              <div class="apartments_price">$400</div>
+              <div class="apartments_data">
+                <div class="info_bath"><img class="bath_img" src="images/icons/shower.svg" alt="shower">1 ВК</div>
+                <div class="info"><img class="bed_img" src="images/icons/bed.svg" alt="shower">2 СК</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="apartments_inner wow fadeInRight" data-wow-offset="130" data-wow-delay="0.4s">
+            <a href="images/apartments/3.jpg" class="lightzoom">
+              <img class="apartments_photo" src="images/apartments/3.jpg" alt="apartments">
+            </a>
+            <div class="apartments_name">Случайная квартира, г. Минск</div>
+            <div class="apartments_info">
+              <div class="apartments_price">$400</div>
+              <div class="apartments_data">
+                <div class="info_bath"><img class="bath_img" src="images/icons/shower.svg" alt="shower">2 ВК</div>
+                <div class="info"><img class="bed_img" src="images/icons/bed.svg" alt="shower">2 СК</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="apartments_inner wow fadeInLeft" data-wow-offset="130" data-wow-delay="0.8s">
+            <a href="images/apartments/4.jpg" class="lightzoom">
+              <img class="apartments_photo" src="images/apartments/4.jpg" alt="apartments">
+            </a>
+            <div class="apartments_name">Случайная квартира, г. Минск</div>
+            <div class="apartments_info">
+              <div class="apartments_price">$350</div>
+              <div class="apartments_data">
+                <div class="info_bath"><img class="bath_img" src="images/icons/shower.svg" alt="shower">1 ВК</div>
+                <div class="info"><img class="bed_img" src="images/icons/bed.svg" alt="shower">2 СК</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="apartments_inner wow fadeInLeft" data-wow-offset="130" data-wow-delay="0.6s">
+            <a href="images/apartments/5.jpg" class="lightzoom">
+              <img class="apartments_photo" src="images/apartments/5.jpg" alt="apartments">
+            </a>
+            <div class="apartments_name">Случайная квартира, г. Минск</div>
+            <div class="apartments_info">
+              <div class="apartments_price">$450</div>
+              <div class="apartments_data">
+                <div class="info_bath"><img class="bath_img" src="images/icons/shower.svg" alt="shower">2 ВК</div>
+                <div class="info"><img class="bed_img" src="images/icons/bed.svg" alt="shower">2 СК</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="apartments_inner wow fadeInLeft" data-wow-offset="130" data-wow-delay="0.4s">
+            <a href="images/apartments/6.jpg" class="lightzoom">
+              <img class="apartments_photo" src="images/apartments/6.jpg" alt="apartments">
+            </a>
+            <div class="apartments_name">Случайная квартира, г. Минск</div>
+            <div class="apartments_info">
+              <div class="apartments_price">$300</div>
+              <div class="apartments_data">
+                <div class="info_bath"><img class="bath_img" src="images/icons/shower.svg" alt="shower">1 BК</div>
+                <div class="info"><img class="bed_img" src="images/icons/bed.svg" alt="shower">1 СК</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="apartments_bottom">
+          <form action="#" class="search" action="index.html" method="post">
+            <input class="search_input" name="name" placeholder="Поиск адреса">
+            <button class="search_btn" type="submit">Поиск</button>
+          </form>
+          <div class="apartments_btn">Посмотреть все квартиры</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4 -->
+    <section id="s4" class="section section_howworks">
+      <div class="container">
+        <h2 class="section_title howworks_title">Как это работает?</h2>
+        <div class="works">
+          <div class="works_item wow pulse" data-wow-delay="0.8s">
+            <div class="works_number works_number_one">01</div>
+            <div class="works_name"><span class="number">01</span>Выберите нужный адрес</div>
+            <div class="works_text">Выберите подходящее для вас местоположение квартиры из предложенных вариантов.</div>
+            <div class="works_footer">
+              <a href="#" class="works_link">Выбрать адрес</a>
+            </div>
+          </div>
+          <div class="works_item wow pulse" data-wow-delay="1.2s">
+            <div class="works_number works_number_two">02</div>
+            <div class="works_name"><span class="number">02</span>Подберите квартиру</div>
+            <div class="works_text"> Выберите понравившуюся квартиру по выбранному адресу.</div>
+            <div class="works_footer">
+              <a href="#" class="works_link">Выбрать адрес</a>
+            </div>
+          </div>
+          <div class="works_item wow pulse" data-wow-delay="1.4s">
+            <div class="works_number works_number_three">03</div>
+            <div class="works_name"><span class="number">03</span>Свяжитесь с нами</div>
+            <div class="works_text">Свяжитесь с нами и мы ответим на интересующие Вас вопросы по выбронной квартире.
+            </div>
+            <div class="works_footer">
+              <a href="#" class="works_link">Выбрать адрес</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5 -->
+    <section id="s5" class="section section_services">
+      <div class="container">
+        <h2 class="section_title services_title">Наши услуги</h2>
+        <div class="services">
+          <div class="services_item">
+            <img class="services_img" src="images/services.jpg" alt="services">
+          </div>
+          <div class="services_item wow fadeInUp" data-wow-offset="120">
+            <div class="services_building">СТРОИТЕЛЬСТВО</div>
+            <p>Долевое строительство – один из способов приобретения жилья в строящихся объектах,
+              предусмотренный законодательством Республики Беларусь. Его суть заключается в привлечении
+              средств потенциальных покупателей для возведения домов. Передача жилья участникам строительства
+              (дольщикам) возможна только после того, как застройщик получит разрешение на ввод в эксплуатацию
+              построенного объекта недвижимости.</p>
+            <div class="services_renting">АРЕНДА</div>
+            <p>Если вы хотите снять квартиру на длительный срок и при этом обойтись без посредников,
+              то вы пришли по адресу. Многие владельцы недвижимости, желающие сдать квартиру в,
+              размещают свои объявления именно на нашем сайте.</p>
+            <div class="services_selling">ПРОДАЖА</div>
+            <p>Наши специалисты вам купить квартиру в Минске и области. В нашей базе собрано множество
+              объявлений от агентств недвижимости и собственников. В каждом объявлении есть вся
+              необходимая информация о квартире и контакты продавца. </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6 -->
+    <section id="s6" class="section section_agents">
+      <div class="container container_agents">
+        <h2 class="section_title agents_title">Наши сотрудники</h2>
+        <p>Наши сотрудники смогут ответить вам на любой интересующий вас вопрос.</p>
+        <div class="agents">
+
+          <div class="agents_inner">
+            <img class="agents_photo" src="images/agent1.jpg" alt="agents">
+            <div class="agents_info">
+              <div class="agents_name">Дмитрий Царь</div>
+              <div class="agents_data">
+                <a href="https://www.facebook.com/" target="_blank" class="connection"><img class="f connection_agent" src="images/icons/facebook.png"
+                    alt="connection"></a>
+                <a href="https://twitter.com/?lang=ru" target="_blank" class="connection"><img class="tw connection_agent" src="images/icons/twitter.png"
+                    alt="connection"></a>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="agents_inner">
+            <img class="agents_photo" src="images/agent2.jpg" alt="agents">
+            <div class="agents_info">
+              <div class="agents_name">Катя Пушкина</div>
+              <div class="agents_data">
+                <a href="https://www.facebook.com/" target="_blank" class="connection"><img class="f connection_agent" src="images/icons/facebook.png"
+                    alt="connection"></a>
+                <a href="https://twitter.com/?lang=ru" target="_blank" class="connection"><img class="tw connection_agent" src="images/icons/twitter.png"
+                    alt="connection"></a>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="agents_inner">
+            <img class="agents_photo" src="images/agent3.jpg" alt="agents">
+            <div class="agents_info">
+              <div class="agents_name">Настя Сулимская</div>
+              <div class="agents_data">
+                <a href="https://www.facebook.com/" target="_blank" class="connection"><img class="f connection_agent" src="images/icons/facebook.png"
+                    alt="connection"></a>
+                <a href="https://twitter.com/?lang=ru" target="_blank" class="connection"><img class="tw connection_agent" src="images/icons/twitter.png"
+                    alt="connection"></a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7 -->
+    <section class="section section_video">
+      <div id="videoPlay" class="container_video">
+        <button id="volume" onclick="toggleMute()">
+          <img class="volume" src="images/volume off.png" alt="volume">
+        </button>
+        <video id="myVideo" preload="metadata" loop muted controls poster="videos/Превью.jpeg">
+          <source src="videos/Сжатый вариант.mp4" type="video/mp4" />
+          <source src="videos/Сжатый вариант.ogv" type="video/ogv" />
+        </video>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- footer -->
+  <footer>
+  
+    <div class="footer_container">
+      <div class="footer_top">
+        <div>Исследуй недвижимость вместе</div>
+        <div>
+          <form action="#" class="footer_search" method="post">
+            <input class="footer_input" name="name" placeholder="Введите адрес эл. почты">
+            <button class="footer_btn" type="submit">Подписаться</button>
+          </form>
+          <div class="footer_btn"></div>
+        </div>
+      </div>
+
+      <div class="footer_bottom">
+        <div>
+          <a href="index.html" class="footer_logo">РОСКОШЬ</a>
+          <h4>Copyright © 2020 Milchenko Dmitry</h4>
+        </div>
+        <div class="footer_links">
+          <div>
+            <h2>КОМПАНИЯ</h2>
+            <h3><a href="#s2">О нас</a></h3>
+            <h3><a href="#s6">Сотрудники</a></h3>
+            <h3><a href="#s1">Вопрос-Ответ</a></h3>
+            <h3><a href="#s1">Контакты</a></h3>
+          </div>
+          <div>
+            <h2>ТОВАР</h2>
+            <h3><a href="#s3">Квартиры</a></h3>
+            <h3><a href="#s4">Как это работает</a></h3>
+          </div>
+          <div>
+            <h2>УСЛУГИ</h2>
+            <h3><a href="#s5">Аренда</a></h3>
+            <h3><a href="#s5">Продажа</a></h3>
+            <h3><a href="#s5">Строительство</a></h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  </div>
+
+  <script src="./jquery/jquery-3.5.1.js"></script>
+  <script src="./script/animate.css.js"></script>
+  <script src="./script/videos.js"></script>
+  <script src="./script/animation_snejinka.js"></script>
+  <link rel="stylesheet" href="./plugin/lightzoom/style.css" type="text/css">
+  <script src="./plugin/lightzoom/lightzoom.js"></script>
+  <script src="./script/lightzoom_custom.js"></script>
+  <link rel="stylesheet" href="./plugin/wow/wowanimate.css" type="text/css">
+  <script src="./plugin/wow/wow.min.js"></script>
+  <script>new WOW().init();</script>
+  <script src="./script/preloader.js"></script>
+  <script src="./script/loginForm.js"></script>
+  <script src="./script/registrationForm.js"></script>
+
+</body>
+
+</html>

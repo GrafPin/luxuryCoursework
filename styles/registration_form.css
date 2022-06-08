@@ -80,7 +80,7 @@ input:focus:-ms-input-placeholder {
   width: 360px;
   background: #fdfdfd;
   opacity: 1;
-  height: 860px;
+  height: auto;
   padding: 10px 20px;
   border-radius: 2px;
   position: fixed;
@@ -216,4 +216,20 @@ p {
 
 .bottom_text a {
   color: #01ccff;
+}
+
+.registration_sex {
+  display: flex;
+}
+
+.registration_sex label {
+  margin-left: 10px;
+}
+
+.registration_age {
+  display: flex;
+}
+
+#age-label {
+  margin: 0 10px 0 0;
 }
